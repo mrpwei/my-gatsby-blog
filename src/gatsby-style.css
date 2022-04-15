@@ -1,0 +1,271 @@
+/**
+ * gatsby-style theme
+ * @author Peng Wei
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #36313d;
+  background: none;
+  font-family: Menlo, Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 0.9em;
+  text-align: left;
+  white-space: pre;
+  position: relative;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection,
+pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection,
+code[class*="language-"] ::-moz-selection {
+  text-shadow: none;
+  background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection {
+  text-shadow: none;
+  background: #b3d4fc;
+}
+
+@media print {
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none;
+  }
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 2em 1em 1em 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #fdfaf6;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+  white-space: normal;
+  background: #fbf2e9;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #527713;
+}
+
+.token.punctuation {
+  color: #999;
+}
+
+.token.namespace {
+  opacity: 0.7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.function-name,
+.token.constant,
+.token.symbol {
+  color: #137886;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.function,
+.token.builtin {
+  color: #b94185;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword,
+.token.class-name {
+  color: #096fb3;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #9a6e3a;
+  /* This background color was intended by the author of this theme. */
+  background: hsla(0, 0%, 100%, 0.5);
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #e90;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+/* tag */
+pre[class*="language-"]:before {
+  background: white;
+  border-radius: 0 0 0.25rem 0.25rem;
+  color: black;
+  font-size: 12px;
+  letter-spacing: 0.025rem;
+  padding: 0.1rem 0.5rem;
+  position: absolute;
+  left: 1rem;
+  text-align: right;
+  text-transform: uppercase;
+  top: 0;
+}
+pre[class~="language-javascript"]:before,
+pre[class~="language-js"]:before {
+  content: "js";
+  background: #f7df1e;
+  color: black;
+}
+pre[class~="language-jsx"]:before {
+  content: "jsx";
+  background: #61dafb;
+  color: black;
+}
+pre[class~="language-ts"]:before {
+  content: "ts";
+  background: #61dafb;
+  color: black;
+}
+pre[class~="language-tsx"]:before {
+  content: "tsx";
+  background: #61dafb;
+  color: black;
+}
+pre[class~="language-html"]:before {
+  content: "html";
+  background: #005a9c;
+  color: white;
+}
+pre[class~="language-xml"]:before {
+  content: "xml";
+  background: #005a9c;
+  color: white;
+}
+pre[class~="language-svg"]:before {
+  content: "svg";
+  background: #005a9c;
+  color: white;
+}
+pre[class~="language-graphql"]:before {
+  content: "GraphQL";
+  background: #e10098;
+  color: white;
+}
+pre[class~="language-css"]:before {
+  content: "css";
+  background: #ff9800;
+  color: white;
+}
+pre[class~="language-mdx"]:before {
+  content: "mdx";
+  background: #f9ac00;
+  color: white;
+}
+pre[class~="language-php"]:before {
+  content: "php";
+  background: #777bb3;
+  color: black;
+}
+pre[class~="language-py"]:before,
+pre[class~="language-python"]:before {
+  content: "py";
+  background: #306998;
+  color: white;
+}
+pre[class~="language-text"]:before {
+  content: "text";
+}
+pre[class~="language-shell"]:before {
+  content: "shell";
+}
+pre[class~="language-sh"]:before {
+  content: "sh";
+}
+pre[class~="language-bash"]:before {
+  content: "bash";
+}
+pre[class~="language-yaml"]:before {
+  content: "yaml";
+  background: #ffa8df;
+}
+pre[class~="language-yml"]:before {
+  content: "yml";
+  background: #ffa8df;
+}
+pre[class~="language-markdown"]:before {
+  content: "md";
+}
+pre[class~="language-json"]:before,
+pre[class~="language-json5"]:before {
+  content: "json";
+  background: linen;
+}
+pre[class~="language-diff"]:before {
+  content: "diff";
+  background: #e6ffed;
+}
+
+.gatsby-highlight
+  > code[class*="language-"]
+  .gatsby-highlight
+  > pre[class~="language-"] {
+  word-spacing: normal;
+  word-break: normal;
+  overflow-wrap: normal;
+  line-height: 1.5;
+  tab-size: 4;
+  hyphens: none;
+}
+.gatsby-highlight pre::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.gatsby-highlight pre::-webkit-scrollbar-thumb {
+  background: #f4d1c6;
+}
+.gatsby-highlight pre::-webkit-scrollbar-track {
+  background: #faede5;
+}

@@ -13,18 +13,10 @@ module.exports = {
         path: `${__dirname}/blog`,
       },
     },
-    "gatsby-plugin-mdx",
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-prismjs`,
-            options: {
-              classPrefix: "language-",
-            },
-          },
-        ],
+        gatsbyRemarkPlugins: [`gatsby-remark-prismjs`],
       },
     },
   ],
