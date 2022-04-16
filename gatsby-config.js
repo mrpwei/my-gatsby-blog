@@ -6,6 +6,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
+    `gatsby-plugin-styled-components`,
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -16,7 +17,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        gatsbyRemarkPlugins: [`gatsby-remark-prismjs`],
+        extensions: [`.mdx`, `.md`],
+        // gatsbyRemarkPlugins: [],
       },
     },
   ],

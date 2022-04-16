@@ -10,14 +10,16 @@ Some of my **favorite** things are:
 - Singing
 - Eating potato-based foods
 
-```css
+This is a `inline` code.
+
+```css file=./src/layout.css
 pre[class~="language-yml"]:before {
   content: yml;
   background: #ffa8df;
 }
 ```
 
-```js
+```js highlights=1-3,5
 import * as React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
@@ -29,7 +31,7 @@ const BlogPage = ({ data }) => {
 
 export const query = graphql`
   query {
-    allMdx(sort: {fields: frontmatter___date, order: DESC}) {
+    allMdx(sort: {fields: frontmatter___date, order: DESC} fields: frontmatter___date, order: DESC}) {
       nodes {
         frontmatter {
           date(formatString: "MMMM D, YYYY")

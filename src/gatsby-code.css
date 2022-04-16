@@ -259,13 +259,13 @@ pre[class~="language-diff"]:before {
   tab-size: 4;
   hyphens: none;
 }
-.gatsby-highlight pre::-webkit-scrollbar {
+pre::-webkit-scrollbar {
   width: 0.5rem;
   height: 0.5rem;
 }
-.gatsby-highlight pre::-webkit-scrollbar-thumb {
+pre::-webkit-scrollbar-thumb {
   background: #f4d1c6;
 }
-.gatsby-highlight pre::-webkit-scrollbar-track {
+pre::-webkit-scrollbar-track {
   background: #faede5;
 }
