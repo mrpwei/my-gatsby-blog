@@ -3,7 +3,9 @@ import { MDXProvider } from "@mdx-js/react";
 import Code from "./code";
 
 const components = {
-  pre: (props) => <Code {...props} />,
+  pre: (props) => {
+    return <Code {...props} />;
+  },
   wrapper: ({ children }) => <>{children}</>,
 };
 
